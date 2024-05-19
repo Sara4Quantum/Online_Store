@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0a0a23; /* Dark blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    margin-bottom: 40px; /* Add accommodation at the bottom */
+}
+
+.cross {
+    display: inline-block;
+    width: 100px; /* Adjust the size of the cross icon */
+    height: 100px;
+    fill: none; /* Transparent fill */
+    stroke: #ff0000; /* Bright pure danger red color for cross */
+    stroke-width: 6; /* Adjust the stroke width for the cross */
+    stroke-linecap: round; /* Round line endings */
+    stroke-linejoin: round; /* Round line corners */
+    opacity: 0; /* Start with the cross invisible */
+    transform: scale(0); /* Start with no visible cross */
+    animation: crossAnimation 0.2s ease-in-out forwards; /* Apply animation to the cross */
+    position: relative; /* Position relative to its normal position */
+    top: 15px; /* Move the cross down */
+}
+
+.invalid {
+    font-size: 48px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 40px; /* Move the text down a bit */
+    color: #ff0000; /* Bright pure danger red text for invalid */
+    opacity: 0; /* Start with the text invisible */
+    transform: translateY(-20px); /* Move the text up */
+    animation: crossAnimation 0.3s ease-in-out forwards; /* Apply animation to the text */
+}
+
+.message {
+    margin-bottom: 43px;
+    margin-top: 33px;
+}
+
+@keyframes crossAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(-20px); /* Start with no visible cross and text */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); /* Show cross and text */
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green; /* Dark blue button */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s; /* Smooth transition */
+    margin-right: 10px; /* Add margin to separate buttons */
+}
+
+.button:hover {
+    background-color: darkgreen; /* Darker blue on hover */
+}
+
+.spacer {
+    margin: 10 10px;
+}
+

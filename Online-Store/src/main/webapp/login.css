@@ -1,0 +1,53 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -3px 3px 1px 1px rgba(0, 0, 0, 0.04), 3px 3px 1px 1px rgba(0, 0, 0, 0.04), 0 -3px 1px 1px rgba(0, 0, 0, 0.04), 0 3px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+  font-size: 70px;    
+  text-align: center;
+  margin: 20px auto;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* 3D text effect */
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+  font-size : 22px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Custom style for oval-shaped button */
+.oval-btn {
+  border-radius: 20px;  
+  padding: 6px 17px;  
+  font-size: 18px;  
+}
+
+.disclaimer {
+    font-weight: bold;
+    font-size: 17.8px;
+    
+    color: brown; /* Dark gray text color */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-bottom: 22px;
+    transform: translateX(-50%);
+}
+.error {
+      color: red;
+      font-weight: bold;
+    }

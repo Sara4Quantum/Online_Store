@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online_Store</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="login.css" rel="stylesheet">
+   
+</head>
+<body>
+  <h1 class="text-center">Online Store</h1>
+
+  <div class="container">
+    <form action="Login" onsubmit="return validateName()">
+      <div class="form-group">
+        <label for="nameInput">Name: </label>
+       <input type="text" class="form-control" id="nameInput" name="UsernamE" placeholder="Enter your Name" required onblur="validateName()" onkeypress="onlyAlphabets(event)">
+
+
+      <span id="errorMessage"></span>
+
+      <div class="text-center">
+        <button class="btn btn-primary mt-4" type="submit"><h5>Log in</h5></button>
+      </div>
+    </form>
+  </div>
+<script>
+
+
+    function validateName() {
+      var name = document.getElementById("nameInput").value;
+      var errorMessage = document.getElementById("errorMessage"); // Get reference to error message element
+
+      if (name === "") {
+        errorMessage.textContent = "Please Enter Your Name";  // Set error message text
+        errorMessage.classList.add("error");                 // Add "error" class for styling
+      } else {
+        errorMessage.textContent = "";  // Clear any previous error message
+        errorMessage.classList.remove("error"); // Remove "error" class if name is entered
+      }
+    }
+
+function onlyAlphabets(event) {
+      var char = String.fromCharCode(event.which);
+      if (!char.match(/^[a-zA-Z]+$/)) {
+        event.preventDefault();
+      }
+    }
+  </script>
+</body>
+</html>

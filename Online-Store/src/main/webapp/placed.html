@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .cancel {
+            background-color: #FF6347;
+            color: #fff;
+        }
+        .continue {
+            background-color: #4682B4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Successfully Order Placed</div>
+    <div class="button-container">
+<form action ="DeleteOrder">        
+<button class="button cancel" >Cancel Order</button>
+</form>
+	<form action ="LoginN">
+        <button class="button continue" >Continue Shopping</button>
+    </form>
+    </div>
+ 
+</body>
+</html>

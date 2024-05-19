@@ -1,0 +1,97 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 80%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"],
+       
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+         input[type="tel"],
+         textarea {
+            width: 89%;
+            padding: 12px;
+	padding-right: 5px;
+
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+             width: 26%;
+  			height: 53px;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 auto;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .tbuy-btn {
+  font-size: 24px; /* Increase font size to 24px */
+}
+        button:hover {
+            background-color: green;
+        }
+        
+        label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Add margin between "Online Payment" and "Credit / Debit Card Number" */
+        .payment-method {
+            margin-bottom: 10px;
+        }
+ 

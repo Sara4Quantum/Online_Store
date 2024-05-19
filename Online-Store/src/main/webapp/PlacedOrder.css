@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #0a0a23; /* Dark blue background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  margin-bottom: 40px; /* Add accommodation at the bottom */
+}
+
+.tick {
+  display: inline-block;
+  width: 100px; /* Adjust the size of the tick icon */
+  height: 100px;
+  fill: none; /* Transparent fill */
+  stroke: #00ff00; /* Green color for tick */
+  stroke-width: 4.5; /* Adjust the stroke width for a bold tick */
+  stroke-linecap: round; /* Round line endings */
+  stroke-linejoin: round; /* Round line corners */
+  opacity: 0; /* Start with the tick invisible */
+  transform: scale(0); /* Start with no visible tick */
+  animation: tickAnimation 0.2s ease-in-out forwards; /* Apply animation to the tick */
+  position: relative; /* Position relative to its normal position */
+  top: 15px; /* Move the tick down */
+}
+
+.valid {
+  font-size: 48px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  margin-top: 40px; /* Move the text down a bit */
+  color: #00ff00; /* Green text for valid */
+  opacity: 0; /* Start with the text invisible */
+  transform: translateY(-20px); /* Move the text up */
+  animation: tickAnimation 0.3s ease-in-out forwards; /* Apply animation to the text */
+}
+
+@keyframes tickAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(-20px); /* Start with no visible tick and text */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0); /* Show tick and text */
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a1a4e; /* Dark blue button */
+  color: #ffffff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s; /* Smooth transition */
+  margin-right: 10px; /* Add margin to separate buttons */
+}
+
+.cancel-button:hover {
+  background-color: red;
+}
+
+.continue-button:hover {
+  background-color: #27275d; /* Darker blue on hover */
+}
